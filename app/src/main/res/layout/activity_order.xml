@@ -4,14 +4,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
+    android:background="#ddd311"
     android:gravity="center">
 
     <TextView
         android:id="@+id/textFoodName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/marcellus_regular"
+        android:textColor="#060e33"
         android:text="Food Name"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:layout_marginBottom="16dp" />
 
@@ -19,6 +22,8 @@
         android:id="@+id/textFoodPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#060e33"
+        android:fontFamily="@font/metropolis_medium"
         android:text="₱0.00"
         android:textSize="20sp" />
 
@@ -33,6 +38,8 @@
         <RadioButton
             android:id="@+id/radioPreOrder"
             android:layout_width="match_parent"
+            android:textColor="#060e33"
+            android:fontFamily="@font/metropolis_medium"
             android:layout_height="68dp"
             android:text="Pre-order" />
 
@@ -64,6 +71,8 @@
     <RadioButton
         android:id="@+id/radioTakeOut"
         android:layout_width="wrap_content"
+        android:textColor="#060e33"
+        android:fontFamily="@font/metropolis_medium"
         android:layout_height="75dp"
         android:layout_marginStart="16dp"
         android:text="Take Out Now" />
@@ -72,6 +81,9 @@
         android:id="@+id/buttonPlaceOrder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#060e33"
+        android:textColor="#fff"
+        android:fontFamily="@font/metropolis_medium"
         android:text="Place Order"
         android:layout_marginTop="32dp" />
 

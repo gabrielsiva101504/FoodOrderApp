@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/home_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#ddd311"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="24dp">
 
     <ImageView
         android:id="@+id/logo1"
-        android:layout_width="800dp"
-        android:layout_height="250dp"
-        android:src="@drawable/gogrub_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/umak_logo"
         android:layout_marginBottom="16dp" />
 
     <ImageView
         android:id="@+id/logo2"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/umak"
+        android:layout_width="250mm"
+        android:layout_height="250dp"
+        android:src="@drawable/gogrub_logo"
         android:layout_marginBottom="16dp" />
 
     <TextView
@@ -27,6 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="My Food Store"
+        android:fontFamily="@font/marcellus_regular"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="#333"
@@ -36,7 +38,9 @@
         android:id="@+id/btn_enter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter Store"
-        android:backgroundTint="#4CAF50"
+        android:text="Enter GoGrub"
+        android:fontFamily="@font/metropolis_medium"
+        android:backgroundTint="#060e33"
         android:textColor="#FFF" />
+
 </LinearLayout>
