@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.foodorderapp">
+
+    <!-- Permission to allow internet access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Food Order App"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        <!-- HomeActivity: NEW launcher activity -->
+        <activity
+            android:name=".ui.HomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- MainActivity -->
+        <activity android:name=".ui.MainActivity" />
+
+        <!-- OrderActivity -->
+        <activity android:name=".ui.OrderActivity" />
+
+        <!-- PaymentActivity -->
+        <activity android:name=".ui.PaymentActivity" />
+
+        <!-- NEW: PaymentMethodActivity (Fake GCash/Card screen) -->
+        <activity android:name=".ui.PaymentMethodActivity" />
+
+        <!-- NEW: ReceiptActivity (Summary page after payment) -->
+        <activity android:name=".ui.ReceiptActivity" />
+
+    </application>
+
+</manifest>

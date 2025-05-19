@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textFoodPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₱0.00"
+        android:textSize="20sp" />
+
+    <!-- Order Type Selection -->
+    <RadioGroup
+        android:id="@+id/orderTypeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp">
+
+        <RadioButton
+            android:id="@+id/radioPreOrder"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:text="Pre-order" />
+
+    </RadioGroup>
+
+    <!-- Optional: Show when Pre-order is selected -->
+    <LinearLayout
+        android:id="@+id/dateTimeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/buttonSelectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date" />
+
+        <Button
+            android:id="@+id/buttonSelectTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Time"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <RadioButton
+        android:id="@+id/radioTakeOut"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:text="Take Out Now" />
+
+    <Button
+        android:id="@+id/buttonPlaceOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        android:layout_marginTop="32dp" />
+
+</LinearLayout>
