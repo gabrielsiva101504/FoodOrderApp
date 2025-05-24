@@ -17,6 +17,9 @@ public class OrderActivity extends AppCompatActivity {
     LinearLayout dateTimeLayout;
     Button buttonSelectDate, buttonSelectTime, buttonPlaceOrder;
     TextView textFoodName, textFoodPrice;
+    int foodId = getIntent().getIntExtra("foodId", -1);
+    // Use foodId to fetch and display food details
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

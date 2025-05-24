@@ -2,16 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.foodorderapp">
 
-    <!-- Permission to allow internet access -->
+    <!-- Required permission -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Food Order App"
+        android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
-        <!-- HomeActivity: NEW launcher activity -->
+        <!-- Launcher (Home) -->
         <activity
             android:name=".ui.HomeActivity"
             android:exported="true">
@@ -21,20 +23,23 @@
             </intent-filter>
         </activity>
 
-        <!-- MainActivity -->
+        <!-- Main Activity -->
         <activity android:name=".ui.MainActivity" />
 
-        <!-- OrderActivity -->
+        <!-- Order Screen -->
         <activity android:name=".ui.OrderActivity" />
 
-        <!-- PaymentActivity -->
+        <!-- Payment Process Screen -->
         <activity android:name=".ui.PaymentActivity" />
 
-        <!-- NEW: PaymentMethodActivity (Fake GCash/Card screen) -->
+        <!-- GCash/Card Payment UI -->
         <activity android:name=".ui.PaymentMethodActivity" />
 
-        <!-- NEW: ReceiptActivity (Summary page after payment) -->
+        <!-- Receipt Screen -->
         <activity android:name=".ui.ReceiptActivity" />
+
+        <!-- Cart Screen (if you still use it) -->
+        <activity android:name=".ui.CartActivity" />
 
     </application>
 
