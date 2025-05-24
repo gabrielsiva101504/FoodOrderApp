@@ -8,7 +8,7 @@
     android:padding="24dp"
     android:gravity="center"
     android:background="#ddd311"
-    tools:context=".ui.PaymentActivity">
+    tools:context=".ui.">
 
     <TextView
         android:id="@+id/foodNameText"

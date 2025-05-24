@@ -25,9 +25,9 @@ public class PaymentMethodActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_method);
 
-        btnGcash = findViewById(R.id.btnGcash);
-        btnCard = findViewById(R.id.btnCard);
-        btnCash = findViewById(R.id.btnCash);
+        btnGcash = findViewById(R.id.btn_gcash);
+        btnCard = findViewById(R.id.btn_card);
+        btnCash = findViewById(R.id.btn_cash);
 
         Intent intent = getIntent();
         foodName = intent.getStringExtra("foodName");

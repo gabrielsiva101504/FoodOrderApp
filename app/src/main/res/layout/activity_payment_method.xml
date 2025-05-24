@@ -1,89 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:gravity="center">
 
-    <LinearLayout
-        android:id="@+id/paymentLayout"
+    <TextView
+        android:id="@+id/tv_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Payment Method"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btn_gcash"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp"
-        android:background="#ddd311"
-        android:gravity="center_horizontal">
+        android:text="Pay with GCash"/>
 
-        <TextView
-            android:id="@+id/txtSelectPayment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Select Payment Method"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="24dp" />
+    <Button
+        android:id="@+id/btn_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay with Card"
+        android:layout_marginTop="12dp"/>
 
-        <Button
-            android:id="@+id/btnGcash"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pay with GCash"
-            android:layout_marginBottom="12dp" />
-
-        <Button
-            android:id="@+id/btnCard"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pay with Card"
-            android:layout_marginBottom="12dp" />
-
-        <Button
-            android:id="@+id/btnCash"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pay with Cash"
-            android:layout_marginBottom="24dp" />
-
-        <!-- GCash QR Code -->
-        <ImageView
-            android:id="@+id/qrCodeImage"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@drawable/qr"
-            android:visibility="gone"
-            android:layout_marginBottom="16dp" />
-
-        <!-- Card Payment PIN Entry -->
-        <LinearLayout
-            android:id="@+id/pinLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:visibility="gone"
-            android:gravity="center_horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Enter PIN"
-                android:textSize="18sp"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="8dp" />
-
-            <EditText
-                android:id="@+id/editPin"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:inputType="numberPassword"
-                android:hint="****"
-                android:maxLength="4"
-                android:gravity="center" />
-
-            <Button
-                android:id="@+id/btnSubmitPin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Submit"
-                android:layout_marginTop="12dp" />
-        </LinearLayout>
-
-    </LinearLayout>
-</ScrollView>
+    <Button
+        android:id="@+id/btn_cash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay with Cash"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>
